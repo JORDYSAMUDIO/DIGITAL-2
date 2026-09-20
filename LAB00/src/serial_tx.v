@@ -10,7 +10,7 @@ module serial_tx #(
     output reg done
 );
 
-    // Definición de Estados de la FSM
+    //definicion de los estados
     localparam S0_IDLE       = 3'b000;
     localparam S1_LOAD       = 3'b001;
     localparam S2_BIT_HOLD   = 3'b010;
@@ -22,7 +22,7 @@ module serial_tx #(
     reg [2:0] bit_cnt;
     reg [$clog2(CLKS_PER_BIT)-1:0] tick_cnt;
 
-    // 1. Registro de Estado (Lógica Secuencial)
+    //1.registro de estado
     always @(posedge clk or posedge rst) begin
         if (rst) begin
             state <= S0_IDLE;
@@ -31,7 +31,7 @@ module serial_tx #(
         end
     end
 
-    // 2. Lógica del Próximo Estado (Lógica Combinacional)
+    //2. logica del proximo estado
     always @(*) begin
         case (state)
             S0_IDLE:       next_state = (start) ? S1_LOAD : S0_IDLE;
@@ -43,7 +43,7 @@ module serial_tx #(
         endcase
     end
 
-    // 3. Datapath y Salidas (Lógica Secuencial)
+    //3.datapath y salidas
     always @(posedge clk or posedge rst) begin
         if (rst) begin
             shift_reg <= 8'h00;
