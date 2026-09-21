@@ -1,7 +1,8 @@
 # Lab ab00 — Introducción a Verilog, Simulación y Máquinas de Estados Finitos (FSM)
 
-**Curso:** [nombre del curso]
-**Autor(es):** [tu nombre / integrantes del grupo]
+**Curso:** [Electrónica Digital II]
+**Autor(es):** [Juan Carlos Salcedo Cabra, Jordy Andrey Samudio Garcia, Andrés Felipe Vega Bermeo]
+
 **Universidad Nacional de Colombia — Sede Bogotá**
 
 ---
