@@ -87,7 +87,7 @@ La FSM usa tres bloques `always`: registro de estado (secuencial), lógica de si
 
 ### Resultado en GTKWave
 
-![Simulación del semáforo en GTKWave](SimSemaforo.png)
+![Simulación del semáforo en GTKWave](simulacionprimerpunto.jpeg)
 
 **Observaciones:**
 - Tras `rst`, el sistema arranca en `green = 1`, como exige la especificación.
