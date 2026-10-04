@@ -1,7 +1,14 @@
 # Lab01: FPGA (Zybo Z7), Vivado/Vitis y Validación de Hardware
 
 **Universidad Nacional de Colombia – Sede Bogotá**
-**Curso:** `Electrónica Digital 2` · **Docente:** `Jose Manuel Velasquez Sotelo` · **Periodo:** `2026-2`
+
+**Curso:** `Electrónica Digital 2` 
+
+**Docente:** `Jose Manuel Velasquez Sotelo` 
+
+**Periodo:** `2026-2`
+
+
 **Integrantes:** `Juan Carlos Salcedo Cabra`, `Jordi`, `Andrés Felipe Vega Bermeo`
 
 ---
@@ -14,10 +21,8 @@
 4. [Actividad 1: Smoke Test (Semáforo)](#4-actividad-1-smoke-test-semáforo)
 5. [Actividad 2: Test Funcional Personalizado](#5-actividad-2-test-funcional-personalizado)
 6. [¿Por qué botones externos? BTN4 y BTN5 en la Zybo Z7](#6-por-qué-botones-externos-btn4-y-btn5-en-la-zybo-z7)
-7. [Evidencia de funcionamiento](#7-evidencia-de-funcionamiento)
-8. [Verificación de requisitos de la guía](#8-verificación-de-requisitos-de-la-guía)
-9. [Problemas encontrados y lecciones aprendidas](#9-problemas-encontrados-y-lecciones-aprendidas)
-10. [Conclusiones](#10-conclusiones)
+7. [Problemas encontrados y lecciones aprendidas](#7-problemas-encontrados-y-lecciones-aprendidas)
+8. [Conclusiones](#8-conclusiones)
 
 ---
 
@@ -391,11 +396,6 @@ Para usarlos hay que **leerlos desde el procesador y pasarlos a la lógica progr
    - En un lazo infinito: **leer** (`XGpioPs_ReadPin`) BTN4/BTN5 y **escribirlos** (`XGpioPs_WritePin`) en los EMIO.
 6. **Cableado en la PL:** los pines EMIO llegan a la lógica programable como señales que alimentan `btn[4]` y `btn[5]` de `testfuncional`.
 
-Esquema conceptual:
-
-```text
-BTN4/BTN5 → pines MIO → PS (ARM, código C en Vitis) → EMIO → PL → testfuncional (btn[5:4]) → LEDs
-```
 
 ### 6.3 Retos que implicaba ese camino
 
@@ -417,37 +417,8 @@ Con esto se usan los 6 botones requeridos, se mantiene el diseño 100 % combinac
 
 ---
 
-## 7. Evidencia de funcionamiento
 
-Lista de verificación de evidencias solicitadas (marcar al completar):
-
-- [ ] Smoke Test: programación exitosa del bitstream.
-- [ ] Smoke Test: foto/video del semáforo funcionando.
-- [ ] Test funcional: foto/video con **todas las entradas** en uso (4 switches + 6 botones).
-- [ ] Test funcional: foto/video con **todas las salidas** en uso (4 LEDs + RGB).
-- [ ] Test funcional: demostración de AND, OR, XOR y suma.
-- [ ] Video de la demostración hecha en clase.
-
----
-
-## 8. Verificación de requisitos de la guía
-
-| Requisito | Cumplimiento |
-|---|---|
-| Usar las 10 entradas (4 SW + 6 BTN) | ✅ `sw[3:0]` = A, `btn[3:0]` = B, `btn[5:4]` = modo |
-| Usar las 4 salidas LED verdes | ✅ `led[3:0]` muestran el resultado de la operación |
-| Usar el LED RGB de forma significativa | ✅ El color indica la operación activa |
-| Operación AND en el HDL | ✅ `op_a & op_b` |
-| Operación OR en el HDL | ✅ `op_a \| op_b` |
-| Operación XOR en el HDL | ✅ `op_a ^ op_b` |
-| Aritmética de 4 bits (suma/resta) | ✅ `op_a + op_b` |
-| Dos operandos de 4 bits (switches + botones) | ✅ A desde switches, B desde botones |
-| Diseño no trivial (sin `assign LED = SW`) | ✅ Selección y procesamiento combinacional real |
-| Comentarios sobre lo que muestra el RGB | ✅ Incluidos en el código |
-
----
-
-## 9. Problemas encontrados y lecciones aprendidas
+## 7. Problemas encontrados y lecciones aprendidas
 
 - **Nombres de puertos vs. `.xdc`:** si el nombre en `get_ports` no coincide con el puerto del top, Vivado no asigna el pin (o marca error). Se ajustó a `led6_r`, `led6_g`, `led6_b` en la Actividad 2 (en el Smoke Test el RGB era `led[2:0]`).
 - **BTN4 y BTN5 no están en la PL:** ver [sección 6](#6-por-qué-botones-externos-btn4-y-btn5-en-la-zybo-z7).
@@ -456,7 +427,7 @@ Lista de verificación de evidencias solicitadas (marcar al completar):
 
 ---
 
-## 10. Conclusiones
+## 8. Conclusiones
 
 - Se instaló y verificó el flujo Vivado/Vitis 2025.2 y se programó la Zybo Z7 por JTAG.
 - El Smoke Test confirmó el funcionamiento del reloj de 125 MHz, del bitstream y del mapeo de pines al LED RGB #6.
