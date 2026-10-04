@@ -166,8 +166,8 @@ Puntos clave del `.xdc`:
 
 Se ejecutó síntesis, implementación, generación del bitstream y programación por JTAG. El LED RGB #6 recorre la secuencia esperada del semáforo.
 
-<h4>Video del Semáforo</h4>
-<video src="./Docs/Img/Semaforo.mp4" controls width="100%"></video>
+[<h4>Video del Semáforo</h4>
+<video src="./Docs/Img/Semaforo.mp4" controls width="100%"></video>](https://github.com/user-attachments/assets/a4635fbf-0232-426c-b262-4b6a0b953a10)
 ---
 
 ## 5. Actividad 2: Test Funcional Personalizado
