@@ -166,14 +166,8 @@ Puntos clave del `.xdc`:
 
 Se ejecutó síntesis, implementación, generación del bitstream y programación por JTAG. El LED RGB #6 recorre la secuencia esperada del semáforo.
 
-> 📷 **Evidencia (Smoke Test):**
-> `![Programación exitosa](docs/img/smoke_programacion.png)`
-> `![Semáforo en rojo](docs/img/smoke_rojo.jpg)`
-> `![Semáforo en amarillo](docs/img/smoke_amarillo.jpg)`
-> `![Semáforo en verde](docs/img/smoke_verde.jpg)`
->
-> 🎥 **Video (opcional):** `[Ver video del semáforo](<enlace>)`
-
+<h4>Video del Semáforo</h4>
+<video src="./Docs/Img/Semaforo.mp4" controls width="100%"></video>
 ---
 
 ## 5. Actividad 2: Test Funcional Personalizado
