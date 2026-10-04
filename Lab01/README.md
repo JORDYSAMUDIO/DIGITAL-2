@@ -162,7 +162,7 @@ Puntos clave del `.xdc`:
 - `PACKAGE_PIN` indica el pin físico del encapsulado y `IOSTANDARD LVCMOS33` el estándar eléctrico (3,3 V).
 - `create_clock` le informa a Vivado la frecuencia real del reloj (8 ns = 125 MHz) para el análisis de temporización.
 
-### 6.5 Resultado
+### 4.5 Resultado
 
 Se ejecutó síntesis, implementación, generación del bitstream y programación por JTAG. El LED RGB #6 recorre la secuencia esperada del semáforo.
 
@@ -188,24 +188,6 @@ Es una **mini ALU combinacional** que permite verificar en menos de 2 minutos qu
 - **Resultado** (4 bits): LEDs verdes `led[3:0]`.
 - **Indicador de operación**: LED RGB (cada operación tiene un color).
 
-### 5.2 Diagrama de bloques
-
-```mermaid
-flowchart LR
-    SW["sw[3:0]<br/>Operando A"] --> ALU
-    BTNB["btn[3:0]<br/>Operando B"] --> ALU
-    BTNM["btn[5:4]<br/>modo"] --> SEL
-    subgraph ALU["Lógica combinacional"]
-        direction TB
-        AND["A & B"]
-        OR["A | B"]
-        XOR["A ^ B"]
-        ADD["A + B"]
-    end
-    SEL["case (modo)"] --> ALU
-    ALU --> LED["led[3:0]<br/>Resultado"]
-    SEL --> RGB["led6_r / led6_g / led6_b<br/>Color de la operación"]
-```
 
 ### 5.3 Código HDL: `testfuncional.v`
 
