@@ -322,21 +322,9 @@ set_property -dict { PACKAGE_PIN W15   IOSTANDARD LVCMOS33 } [get_ports { btn[5]
 
 ### 5.7 Evidencia de funcionamiento
 
-> 🎥 **Video de la demostración en clase:**
-> `[Ver video del Test Funcional](<enlace_al_video>)`
-> (o súbelo a `docs/` y enlázalo: `[Video](docs/video_test_funcional.mp4)`)
+[[<h4>Video del test funcional (Anteriormentre ya mostrado en clase) </h4>
+<video src="./Docs/Img/Semaforo.mp4" controls width="100%"></video>]([https://github.com/user-attachments/assets/a4635fbf-0232-426c-b262-4b6a0b953a10](https://github.com/user-attachments/assets/6c7d1bec-a68f-46b4-8199-6bc9d8b372e7))](https://github.com/user-attachments/assets/6c7d1bec-a68f-46b4-8199-6bc9d8b372e7)
 
-> 📷 **Fotos por operación** (indicar en cada una los valores de A, B y `modo`):
->
-> | Operación | Evidencia |
-> |---|---|
-> | AND (rojo) | `![AND](docs/img/test_and.jpg)` |
-> | OR (verde) | `![OR](docs/img/test_or.jpg)` |
-> | XOR (azul) | `![XOR](docs/img/test_xor.jpg)` |
-> | Suma (blanco) | `![SUMA](docs/img/test_suma.jpg)` |
->
-> 📷 **Programación exitosa del bitstream:** `![Programación](docs/img/test_programacion.png)`
-> 📷 **Reportes de Vivado (opcional):** utilización de recursos, esquemático RTL (*Elaborated Design*).
 
 ---
 
