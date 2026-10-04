@@ -387,7 +387,7 @@ Con esto se usan los 6 botones requeridos, se mantiene el diseño 100 % combinac
 - **Nombres de puertos vs. `.xdc`:** si el nombre en `get_ports` no coincide con el puerto del top, Vivado no asigna el pin (o marca error). Se ajustó a `led6_r`, `led6_g`, `led6_b` en la Actividad 2 (en el Smoke Test el RGB era `led[2:0]`).
 - **BTN4 y BTN5 no están en la PL:** ver [sección 6](#6-por-qué-botones-externos-btn4-y-btn5-en-la-zybo-z7).
 - **Pines no usados deben permanecer comentados:** cada línea habilitada del `.xdc` debe corresponder a un puerto real del módulo top.
-- **`<Agrega aquí otros problemas reales>`** (drivers JTAG, licencia, selección de la parte, cableado, etc.).
+- **Falla del cable micro-USB:** Ante fallos de alimentación o detección en Vivado, descartar primero el cable y el puerto USB del PC antes de revisar drivers, licencias o el HDL. Se resolvió reemplazando el cable del laboratorio por uno propio con líneas de datos.
 
 ---
 
