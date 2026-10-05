@@ -343,8 +343,6 @@ Los botones **BTN0–BTN3** (callout 13) llegan directamente a pines de la FPGA,
 
 Por eso el `.xdc` genérico de Digilent solo incluye `btn[0]`–`btn[3]`: BTN4 y BTN5 no existen como pines de la PL, y no se pueden "llamar" desde el Verilog con un simple `PACKAGE_PIN`.
 
-> Verifica los números exactos de pin MIO en el *Zybo Z7 Reference Manual* (sección de botones y switches).
-
 ### 6.2 Lo que habría implicado usar BTN4 y BTN5 (ruta por el PS)
 
 Para usarlos hay que **leerlos desde el procesador y pasarlos a la lógica programable**. Es un flujo híbrido hardware/software:
