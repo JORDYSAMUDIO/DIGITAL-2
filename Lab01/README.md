@@ -9,7 +9,7 @@
 **Periodo:** `2026-2`
 
 
-**Integrantes:** `Juan Carlos Salcedo Cabra`, `Jordi`, `Andrés Felipe Vega Bermeo`
+**Integrantes:** `Juan Carlos Salcedo Cabra`, `Jordy Andrey Samudio García`, `Andrés Felipe Vega Bermeo`
 
 ---
 
