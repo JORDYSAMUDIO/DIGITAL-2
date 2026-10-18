@@ -207,6 +207,7 @@ El testbench instancia la ALU, aplica múltiples combinaciones de `a`, `b` y `op
 
 
 | a | b | operación | resultado |
+|--|--|
 | 5 | 3 | 00 (suma) | 8 |
 
 - Cada operación produce el resultado esperado para los operandos aplicados.
