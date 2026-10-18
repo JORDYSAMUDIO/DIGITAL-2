@@ -200,9 +200,7 @@ El testbench instancia la ALU, aplica múltiples combinaciones de `a`, `b` y `op
 
 ### 10.3 Capturas de GTKWave
 
-_(Insertar capturas con las señales `a`, `b`, `opcode` y `result`.)_
-
-![Simulación completa](sim/img/gtkwave_completa.png)
+![Simulación completa](sim/Screenshot 2026-10-18 074454.png)
 ![Detalle de operaciones](sim/img/gtkwave_detalle.png)
 
 ### 10.4 Comportamiento observado
