@@ -200,7 +200,7 @@ El testbench instancia la ALU, aplica múltiples combinaciones de `a`, `b` y `op
 
 ### 10.3 Capturas de GTKWave
 
-![Simulación completa](sim/Screenshot2026-10-18074454.png)
+![Simulación completa](sim/simalu.png)
 ![Detalle de operaciones](sim/img/gtkwave_detalle.png)
 
 ### 10.4 Comportamiento observado
