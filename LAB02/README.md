@@ -244,10 +244,16 @@ El diseño sintetiza e implementa en Vivado y se descarga a la Zybo Z7. Procedim
   <br>
 
   ### Captura de pantalla 1
-  ![Primera Imagen](sim/suma.jpng)
+  ![Primera Imagen](sim/suma.jpeg)
 
   ### Captura de pantalla 2
-  ![Segunda Imagen](sim/Resta.jpng)
+  ![Segunda Imagen](sim/Resta.jpeg)
+
+  ### Captura de pantalla 3
+  ![Segunda Imagen](sim/and.jpeg)
+
+  ### Captura de pantalla 4
+  ![Segunda Imagen](sim/or.jpeg)
 
 </details>
 ---
