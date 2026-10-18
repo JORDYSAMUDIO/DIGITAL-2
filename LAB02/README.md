@@ -239,13 +239,17 @@ El diseño sintetiza e implementa en Vivado y se descarga a la Zybo Z7. Procedim
 
 ### Evidencia
 
-_(Insertar fotos o video del funcionamiento en la placa, una por operación, mostrando LEDs y color del RGB.)_
+<details>
+  <summary>📸 Haz clic aquí para ver las imágenes del proyecto</summary>
+  <br>
 
-![Suma](img/fpga_suma.jpg)
-![Resta](img/fpga_resta.jpg)
-![AND](img/fpga_and.jpg)
-![OR](img/fpga_or.jpg)
+  ### Captura de pantalla 1
+  ![Primera Imagen](sim/suma.jpng)
 
+  ### Captura de pantalla 2
+  ![Segunda Imagen](sim/Resta.jpng)
+
+</details>
 ---
 
 ## 12. Cumplimiento de los criterios de éxito
