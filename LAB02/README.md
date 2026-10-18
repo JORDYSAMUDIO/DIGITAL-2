@@ -172,17 +172,16 @@ Definida en `Zybo_Z7_Master.xdc`. Reloj de 125 MHz (periodo de 8 ns), todos los 
 .
 ├── README.md
 └── sim/
-    ├── alu_tb.v            # testbench
-    ├── alu_tb.vcd          # archivo de ondas
-    ├── alu_tb.v            # testbench
-    ├── alu_tb.vcd
-    ├── alu_tb.v            # testbench
-    ├── alu_tb.vcd
-    └── img/                # capturas de GTKWave
+    ├── alu.v           
+    ├── input_control.v          
+    ├── alu_tb.v           
+    ├── rgb_decoder.v
+    ├── top.v           
+    ├── Zybo_Z7-Master.xdc
+    └── Archivos.png/jpeg        # capturas de GTKWave y evidencia de laboratorio
  
 ```
 
-> Ajustar los nombres de archivo del testbench y del VCD a los que realmente se usen.
 
 ---
 
