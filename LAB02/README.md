@@ -2,7 +2,11 @@
 
 **Plataforma:** FPGA Zybo Z7 · **Lenguaje:** Verilog · **Simulación:** Icarus Verilog + GTKWave · **Síntesis:** Vivado
 
-**Integrantes:** _(completar)_
+**Curso:** [Electrónica Digital II]
+
+**Autores:** [Juan Carlos Salcedo Cabra, Jordy Andrey Samudio Garcia, Andrés Felipe Vega Bermeo]
+
+**Universidad Nacional de Colombia — Sede Bogotá**
 
 ---
 
