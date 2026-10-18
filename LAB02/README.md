@@ -206,8 +206,8 @@ El testbench instancia la ALU, aplica múltiples combinaciones de `a`, `b` y `op
 ### 10.4 Comportamiento observado
 
 
-|a|b|operación|resultado|
-|5|3|00 (suma)|8|
+| a | b | operación | resultado |
+| 5 | 3 | 00 (suma) | 8 |
 
 - Cada operación produce el resultado esperado para los operandos aplicados.
 - El resultado cambia al variar el opcode sin modificar `a` y `b`.
