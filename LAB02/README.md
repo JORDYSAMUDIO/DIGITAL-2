@@ -209,6 +209,9 @@ El testbench instancia la ALU, aplica múltiples combinaciones de `a`, `b` y `op
 | a | b | operación | resultado |
 |---|---|---|---|
 | 5 | 3 | 00 (suma) | 8 |
+| 9 | 4 | 01 (resta) | 5 |
+| C (1100) | A (1010) | 10 (AND) | 8 (1000) |
+| C (1100) | 3 (0011) | 11 (OR) | F (1111) |
 
 - Cada operación produce el resultado esperado para los operandos aplicados.
 - El resultado cambia al variar el opcode sin modificar `a` y `b`.
