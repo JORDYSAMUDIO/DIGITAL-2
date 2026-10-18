@@ -226,18 +226,18 @@ El testbench instancia la ALU, aplica múltiples combinaciones de `a`, `b` y `op
 
 El diseño sintetiza e implementa en Vivado y se descarga a la Zybo Z7. Procedimiento de verificación realizado:
 
-| # | Prueba | Resultado |
-|:-:|---|:-:|
-| 1 | Colocar un valor en los switches y cargarlo como A (BTN0) 
-| 2 | Mover los switches y comprobar que A conserva su valor 
-| 3 | Cargar un nuevo valor como B (BTN1) 
-| 4 | Seleccionar una operación (BTN2/BTN3) y soltar los botones 
-| 5 | Verificar que la operación permanece seleccionada 
-| 6 | Observar el resultado en los LEDs 
-| 7 | Verificar el color del LED RGB para la operación 
-| 8 | Cambiar la operación sin tocar los operandos y verificar el resultado 
-| 9 | Verificar el cambio de color del LED RGB 
-| 10 | Mover los switches y verificar que A y B no cambian sin nueva carga 
+| # | Prueba |
+|:-:|---|
+| 1 | Colocar un valor en los switches y cargarlo como A (BTN0) |
+| 2 | Mover los switches y comprobar que A conserva su valor |
+| 3 | Cargar un nuevo valor como B (BTN1) |
+| 4 | Seleccionar una operación (BTN2/BTN3) y soltar los botones |
+| 5 | Verificar que la operación permanece seleccionada |
+| 6 | Observar el resultado en los LEDs |
+| 7 | Verificar el color del LED RGB para la operación |
+| 8 | Cambiar la operación sin tocar los operandos y verificar el resultado |
+| 9 | Verificar el cambio de color del LED RGB |
+| 10 | Mover los switches y verificar que A y B no cambian sin nueva carga |
 
 ### Evidencia
 
