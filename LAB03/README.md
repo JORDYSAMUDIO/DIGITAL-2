@@ -229,10 +229,7 @@ La guía exige un testbench del sistema completo antes de pasar a la FPGA. El te
 ## 8. Implementación en FPGA
 
 ### Evidencia de funcionamiento
-
-> _Agregar fotos o video del montaje funcionando._
->
-> `![FPGA](img/fpga_xxx.jpg)`
+https://youtu.be/1IvgznjKNlI
 
 ---
 
