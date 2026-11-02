@@ -13,11 +13,10 @@
 3. [Descripción de cada módulo](#3-descripción-de-cada-módulo)
 4. [Interfaz de usuario (Zybo Z7)](#4-interfaz-de-usuario-zybo-z7)
 5. [Estrategia de visualización](#5-estrategia-de-visualización)
-6. [Ejemplo de uso paso a paso](#6-ejemplo-de-uso-paso-a-paso)
-7. [Simulación (GTKWave)](#7-simulación-gtkwave)
-8. [Implementación en FPGA](#8-implementación-en-fpga)
-9. [Análisis de resultados](#9-análisis-de-resultados)
-10. [Estructura del repositorio](#10-estructura-del-repositorio)
+6. [Simulación (GTKWave)](#6-simulación-gtkwave)
+7. [Implementación en FPGA](#7-implementación-en-fpga)
+8. [Análisis de resultados](#8-análisis-de-resultados)
+9. [Estructura del repositorio](#9-estructura-del-repositorio)
 
 ---
 
@@ -86,9 +85,8 @@ Los botones mecánicos generan rebotes (varias transiciones falsas al pulsar). E
 
 1. **Sincronizador de 2 flip-flops** (`btn_sync_0`, `btn_sync_1`): evita problemas de metaestabilidad al leer una señal asíncrona.
 2. **Contador antirrebote:** solo acepta un nuevo estado del botón si la señal se mantiene distinta del estado actual durante **1 250 000 ciclos** → 1 250 000 × 8 ns = **10 ms** a 125 MHz.
-3. **Detector de flanco ascendente:** `pulse = btn_state & ~btn_state_d`. Entrega **un único pulso de un ciclo de reloj** por cada pulsación, sin importar cuánto tiempo se mantenga presionado el botón.
+3. **Detector de flanco ascendente:** `pulse = btn_state & ~btn_state_d`. Entrega un único pulso de un ciclo de reloj por cada pulsación, sin importar cuánto tiempo se mantenga presionado el botón.
 
-> Por qué es importante: así cada pulsación equivale exactamente a **una** acción (un incremento, una escritura, una ejecución).
 
 ### 3.2 `reg_bank.v` – Banco de registros
 
@@ -191,7 +189,6 @@ end
 | LED RGB | Indica el registro seleccionado para escritura |
 | TM1637 | Muestra el resultado de la última operación ejecutada |
 
-> **Nota:** los switches `SW[2:0]` se comparten entre el **dato a escribir** y el **código de operación**. Por eso, primero se configuran los switches para escribir los datos, y después se reconfiguran para elegir la operación antes de presionar BTN3.
 
 ---
 
@@ -212,22 +209,7 @@ El resultado se muestra en **hexadecimal, en los dos dígitos de la derecha** de
 
 ---
 
-## 6. Ejemplo de uso paso a paso
-
-**Objetivo:** guardar R0 = 3 y R1 = 5, y calcular R0 + R1.
-
-| Paso | Acción | Resultado esperado |
-|:-:|---|---|
-| 1 | LED RGB en rojo (R0). `SW[3:0] = 0011`, pulsar **BTN1** | R0 = 3 |
-| 2 | Pulsar **BTN0** (RGB verde → R1). `SW[3:0] = 0101`, pulsar **BTN1** | R1 = 5 |
-| 3 | Pulsar **BTN2** hasta que se enciendan **LED0 y LED1** | Operandos: A = R0, B = R1 |
-| 4 | `SW[2:0] = 000` (suma), pulsar **BTN3** | Display: `08` |
-| 5 | Cambiar switches o combinación **sin** pulsar BTN3 | El display sigue en `08` |
-| 6 | `SW[2:0] = 001` (resta), pulsar **BTN3** | Display: `0E` (3 − 5 mod 16) |
-
----
-
-## 7. Simulación (GTKWave)
+## 6. Simulación (GTKWave)
 
 La guía exige un testbench del sistema completo **antes** de pasar a la FPGA. El testbench debe verificar:
 
@@ -237,35 +219,13 @@ La guía exige un testbench del sistema completo **antes** de pasar a la FPGA. E
 - Actualización del resultado al ejecutar una operación.
 - Conservación del último resultado mientras no haya una nueva ejecución.
 
-Comandos típicos (Icarus Verilog + GTKWave):
-
-```bash
-iverilog -o sim tb_top.v top.v alu.v reg_bank.v comb_selector.v debounce_edge.v display_tm1637.v
-vvp sim
-gtkwave dump.vcd
-```
-
-> 💡 **Para simular de forma práctica:** el antirrebote espera 1 250 000 ciclos por pulsación; en el testbench conviene reducir ese parámetro (o forzar los pulsos) para que la simulación no sea eterna.
 
 ### Capturas de GTKWave
 
-> _Agregar aquí las capturas de las formas de onda (escritura de registros, cambio de combinación, ejecución de la ALU y conservación del resultado)._
->
-> `![Simulación](img/gtkwave_xxx.png)`
 
 ---
 
 ## 8. Implementación en FPGA
-
-1. Crear el proyecto en **Vivado** para la Zybo Z7 y agregar los 6 archivos `.v`.
-2. Asignar pines en el archivo de restricciones (`.xdc`): reloj (`K17`, 125 MHz), `sw[3:0]`, `btn0..btn3`, `led[3:0]`, `rgb_led[2:0]`, `tm1637_clk` y `tm1637_dio` (en pines de los puertos Pmod).
-3. Sintetizar, implementar y generar el bitstream.
-4. Programar la FPGA y verificar:
-   - ✅ Los registros almacenan correctamente los datos.
-   - ✅ Las combinaciones cambian con BTN2.
-   - ✅ La operación se ejecuta al presionar BTN3.
-   - ✅ El display solo cambia después de una nueva ejecución.
-   - ✅ El resultado anterior permanece mientras no se ejecute otra operación.
 
 ### Evidencia de funcionamiento
 
@@ -297,9 +257,6 @@ lab03/
 │   ├── comb_selector.v
 │   ├── debounce_edge.v
 │   └── display_tm1637.v
-├── sim/
-│   ├── tb_top.v
-│   └── dump.vcd
 ├── constraints/
 │   └── zybo_z7.xdc
 ├── img/
