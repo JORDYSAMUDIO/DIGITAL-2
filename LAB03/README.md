@@ -211,7 +211,7 @@ El resultado se muestra en **hexadecimal, en los dos dígitos de la derecha** de
 
 ## 6. Simulación (GTKWave)
 
-La guía exige un testbench del sistema completo **antes** de pasar a la FPGA. El testbench debe verificar:
+La guía exige un testbench del sistema completo antes de pasar a la FPGA. El testbench debe verificar:
 
 - Escritura correcta en el banco de registros.
 - Generación correcta de las combinaciones de operandos.
@@ -221,6 +221,7 @@ La guía exige un testbench del sistema completo **antes** de pasar a la FPGA. E
 
 
 ### Capturas de GTKWave
+<img width="1600" height="231" alt="image" src="https://github.com/user-attachments/assets/1b5c783f-8534-41a5-bdd7-3f99c97b2da4" />
 
 
 ---
