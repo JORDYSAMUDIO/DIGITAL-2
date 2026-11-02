@@ -2,6 +2,7 @@
 
 **Electrónica Digital 2 · Universidad Nacional de Colombia, Sede Bogotá**
 **Plataforma:** FPGA Zybo Z7 (reloj de 125 MHz) · **Lenguaje:** Verilog · **Herramientas:** Vivado, GTKWave
+**Autores:** _(nombres del grupo)_ · **Grupo:** _(número)_
 
 ---
 
@@ -307,4 +308,3 @@ lab03/
 
 ---
 
-**Autores:** _(nombres del grupo)_ · **Grupo:** _(número)_
