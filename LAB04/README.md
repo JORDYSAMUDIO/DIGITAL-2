@@ -52,9 +52,7 @@ Para que Vivado reconozca automáticamente la distribución de pines y periféri
    ```
 3. Se reinició Vivado para cargar la definición de la tarjeta en el catálogo.
 
-> **[ESPACIO PARA IMAGEN 1]**  
-> *Insertar captura de la carpeta `zybo-z7-10` ubicada en el directorio `board_files` o de la selección de la tarjeta en Vivado:*  
-> `![Instalación Board Files Zybo Z7-10](img/01_instalacion_board.png)`
+<img width="1227" height="350" alt="image" src="https://github.com/user-attachments/assets/12275a54-1f78-4694-972e-00ef89d86cf8" />
 
 ---
 
