@@ -94,9 +94,8 @@ Para que el procesador ARM pueda leer y escribir en los periféricos de la PL, c
 3. **Síntesis, Implementación y Bitstream:** Se ejecutó **Generate Bitstream** hasta obtener el archivo de configuración de la FPGA sin errores.
 4. **Exportación de Hardware:** Mediante **File $\rightarrow$ Export $\rightarrow$ Export Hardware** (marcando la casilla **Include bitstream**), se generó el archivo `.xsa` necesario para Vitis.
 
-> **[ESPACIO PARA IMAGEN 4]**  
-> *Insertar captura de la generación exitosa del Bitstream o de la ventana Export Hardware Platform:*  
-> `![Exportación de Hardware XSA](img/04_export_hardware.png)`
+<img width="1637" height="1108" alt="image" src="https://github.com/user-attachments/assets/08f57469-5747-41e5-aaa9-0844e6b71155" />
+
 
 ---
 
