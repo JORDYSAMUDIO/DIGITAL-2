@@ -85,7 +85,8 @@ Para que el procesador ARM pueda leer y escribir en los periféricos de la PL, c
 2. Haciendo clic derecho sobre un espacio vacío, se seleccionó **Assign** para asignar automáticamente las direcciones base.
 3. Para optimizar el espacio de direccionamiento de los periféricos de entrada/salida, se modificó el rango (**Range**) de `/axi_gpio_0/S_AXI` de **`64K`** a **`4K`**.
 
-![Uploading image.png…]()
+<img width="1115" height="221" alt="image" src="https://github.com/user-attachments/assets/4cc646ef-72bf-446c-a35e-84bbd6098215" />
+
 
 ---
 
