@@ -74,9 +74,7 @@ Para que Vivado reconozca automáticamente la distribución de pines y periféri
    * **Buses de datos:** `M_AXI_GP0` conectado a `S00_AXI`; `M00_AXI` conectado a `axi_bram_ctrl_0/S_AXI`; `M01_AXI` conectado a `axi_gpio_0/S_AXI`; y `BRAM_PORTA` conectado entre el controlador y el generador de memoria.
 6. Finalmente, se ejecutó **Regenerate Layout** para organizar visualmente la arquitectura.
 
-> **[ESPACIO PARA IMAGEN 2]**  
-> *Insertar captura completa del Block Design en Vivado con todas las conexiones realizadas:*  
-> `![Diagrama de bloques SoC Zynq-7000](img/02_block_design.png)`
+<img width="1627" height="1101" alt="image" src="https://github.com/user-attachments/assets/cdf8fda5-2176-4b3a-b1e2-22e69098adb8" />
 
 ---
 
