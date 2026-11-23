@@ -126,9 +126,7 @@ Al ejecutar el programa en la **Zybo Z7-10**, se verificó la correcta integraci
 * **Operación de entrada (Botones):** Al presionar cualquiera de los 4 pulsadores (`BTN0` a `BTN3`), el procesador lee el estado del canal de entrada del GPIO y mantiene encendido de forma fija el LED correspondiente mientras el botón permanezca pulsado.
 * **Acceso a memoria:** Se validó la comunicación a través del bus AXI hacia la memoria `BRAM` configurada en el mapa de direcciones.
 
-> **[ESPACIO PARA IMAGEN 6]**  
-> *Insertar fotografía de la tarjeta Zybo Z7-10 funcionando (mostrando los LEDs encendidos al presionar los botones):*  
-> `![Montaje físico Zybo Z7-10 funcionando](img/06_funcionamiento_zybo.jpg)`
+https://youtube.com/shorts/nlrtymA5nZo
 
 ### Conclusiones
 * *(Agrega aquí 2 o 3 conclusiones breves sobre lo aprendido en la integración PS-PL, el uso de buses AXI y la diferencia entre diseñar en Vivado frente a programar en Vitis).*
