@@ -112,9 +112,7 @@ Para que el procesador ARM pueda leer y escribir en los periféricos de la PL, c
    * Se conectó la tarjeta **Zybo Z7-10** mediante USB con el jumper **JP5** en modo **JTAG**.
    * En el panel **FLOW**, se ejecutó **Build** para compilar el proyecto y posteriormente **Run** para programar la FPGA y cargar el ejecutable en el procesador ARM.
 
-> **[ESPACIO PARA IMAGEN 5]**  
-> *Insertar captura de Vitis IDE mostrando la compilación exitosa (Build) sin errores:*  
-> `![Compilación en Vitis IDE](img/05_vitis_build.png)`
+<img width="1380" height="783" alt="image" src="https://github.com/user-attachments/assets/4ec041bf-9452-4342-b6fd-34dcedef931c" />
 
 ---
 
