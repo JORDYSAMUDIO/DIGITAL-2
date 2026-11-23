@@ -127,8 +127,11 @@ Al ejecutar el programa en la **Zybo Z7-10**, se verificó la correcta integraci
 https://youtube.com/shorts/nlrtymA5nZo
 
 ### Conclusiones
-* *(Agrega aquí 2 o 3 conclusiones breves sobre lo aprendido en la integración PS-PL, el uso de buses AXI y la diferencia entre diseñar en Vivado frente a programar en Vitis).*
++ Se comprobó cómo el Zynq-7000 combina el procesador ARM con la lógica de la FPGA en la Zybo Z7-10, logrando controlar los botones y los LEDs físicos directamente desde un programa en lenguaje C.
 
++ Para que el procesador se comunique sin fallos con los periféricos y la memoria BRAM, es fundamental conectar bien las señales de reloj y reset, además de asignar correctamente los rangos de memoria en el Address Editor (como el ajuste a 4K en el GPIO).
+
++ El archivo .xsa sirve como el puente entre ambos programas: primero se diseña y exporta el hardware en Vivado, y luego Vitis usa ese archivo como base para compilar y ejecutar el código sobre la tarjeta.
 ---
 
 ## 5. Referencias
