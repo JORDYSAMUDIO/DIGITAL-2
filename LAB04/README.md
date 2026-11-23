@@ -85,9 +85,7 @@ Para que el procesador ARM pueda leer y escribir en los periféricos de la PL, c
 2. Haciendo clic derecho sobre un espacio vacío, se seleccionó **Assign** para asignar automáticamente las direcciones base.
 3. Para optimizar el espacio de direccionamiento de los periféricos de entrada/salida, se modificó el rango (**Range**) de `/axi_gpio_0/S_AXI` de **`64K`** a **`4K`**.
 
-> **[ESPACIO PARA IMAGEN 3]**  
-> *Insertar captura de la pestaña Address Editor mostrando las direcciones asignadas y el rango de 4K en `axi_gpio_0`:*  
-> `![Mapa de memoria Address Editor](img/03_address_editor.png)`
+![Uploading image.png…]()
 
 ---
 
