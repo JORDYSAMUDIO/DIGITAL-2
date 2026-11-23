@@ -5,8 +5,9 @@
 **Herramientas:** AMD Vivado & Vitis IDE  
 
 **Integrantes:**
-* *Nombre del Estudiante 1*
-* *Nombre del Estudiante 2*
+* Juan Carlos Salcedo Cabra
+* Jordy Andrey Samudio Garcia
+* Andrés Felipe Vega Bermeo
 
 ---
 
